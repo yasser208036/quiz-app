@@ -1,0 +1,122 @@
+.main-button {
+  padding: 15px 30px;
+  color: var(--main-color);
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  font-size: 25px;
+  font-weight: bold;
+}
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+}
+.card header {
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.card main {
+  padding: 20px 30px;
+  border: 1px solid;
+  border-color: #d3d3d3 transparent;
+  font-size: 17px;
+  line-height: 30px;
+}
+.card main span {
+  font-weight: 600;
+  color: var(--main-color);
+}
+.card footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px 30px;
+}
+.question {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 550px;
+  transition: all 0.3s ease;
+}
+.question header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.question header .counter {
+  padding: 10px;
+  border-radius: 5px;
+  color: #004085;
+  background-color: #cce5ff;
+  font-weight: 400;
+  font-size: medium;
+}
+.question header .counter span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #343a40;
+  height: 30px;
+  width: 45px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.question header .timer-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  background-color: var(--main-color);
+}
+.question ul {
+  list-style: none;
+  padding-top: 20px;
+}
+.question ul li {
+  background: aliceblue;
+  border: 1px solid #84c5fe;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 17px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.question ul li.correct {
+  color: #155724;
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+.question ul li.wrong {
+  color: #721c24;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+.question footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.score {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 25px 30px;
+}
+.score p {
+  font-size: 20px;
+  font-weight: 500;
+}
