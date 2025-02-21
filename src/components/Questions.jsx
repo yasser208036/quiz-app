@@ -77,7 +77,10 @@ export const Questions = ({
           Time Left
           <span>{timer < 10 ? `0${timer}` : timer}</span>
         </div>
-        <div style={{ width: `${barWidth}px` }} className="timer-bar"></div>
+        <div
+          style={{ width: `${(barWidth * 100) / 550}%` }}
+          className="timer-bar"
+        ></div>
       </header>
       <main>
         <h2>
